@@ -1,0 +1,9 @@
+
+#type-head{
+    font-size: 20px;
+}
+#type-edit {
+    border: white 1px solid;
+    min-height: 500px;
+    padding: 20px;
+}

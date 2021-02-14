@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title><%= title %></title>
+    
+  </head>
+  <body>
+    <div class="main">
+      <header><%- include template/header %></header>
+      <footer><%- include template/footer %></footer>
+      <aside><%- include template/aside %></aside>
+      <article id="article-nav">
+          <ul>
+              <li><i class="ace-icon fa fa-home home-icon"></i></li>
+              <li><i class="fas fa-angle-double-right" style="font-size: 10px;"></i></li>
+              <li><%= title %></li>
+          </ul>
+      </article>
+      <article id="article-body">
+            
+      </article>
+      
+    </div>
+  </body>
+</html>

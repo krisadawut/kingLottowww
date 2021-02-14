@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="/stylesheets/main-layout.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<nav>
+    <div class="nav-icon">
+        <ul>
+            <li style="background-color:#87b87f !important ;"><i class="fas fa-pen-nib fa-lg"></i></li>
+            <li style="background-color:#6fb3e0 !important"><i class="fas fa-address-card fa-lg" ></i></li>
+            <li style="background-color: #ffb752 !important;"><i class="fas fa-calculator fa-lg"></i></li>
+            <li style="background-color: #d15b47 !important;"><i class="fas fa-donate fa-lg"></i></li>
+        </ul>
+    </div>
+    <div class="user-detail">
+        <ul>
+            <li>ชื่อ: </li>
+            <li>ระดับ: </li>
+            <li>จำนวนเงิน: </li>
+            <li>สมาชิก: </li>
+        </ul>
+    </div>
+    <div class="section-menu">
+        <ul class="menu">
+            <li><a href="/" class="menu0"> Dashboard </a></li> 
+            <li><a href="#" class="menu1"> รายการแทง 
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="sub-menu1">
+                    <li><a href="#">1.ดูของรวม/คาดคะเนได้เสีย</a></li>
+                    <li><a href="#">2.ดูของ สมาชิก/ประเภท</a></li>
+                    <li><a href="#">3.รอผลเดิมพัน</a></li>
+                    <li><a href="#">4.ตั้งค่าการรับของ</a></li>
+                    <li><a href="#">5.ตั้งค่ารับของแยกตามชนิด</a></li>
+                    <li><a href="#">6.ตั้งค่าจ่ายครึ่ง</a></li>
+                    <li><a href="#">7.ยกเลิก โดย/รายการแทง</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu2">จัดการสมาชิก
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="sub-menu2">
+                    <li><a href="#">1.เพิ่มสมาชิก</a></li>
+                    <li><a href="#">2.ข้อมูลทั่วไป/เก็บของ</a></li>
+                    <li><a href="#">3.ขั้นต่ำ/สูงสุด/สูงสดต่อเลข</a></li>
+                    <li><a href="#">4.อัตราจ่าย/คอมมิชชั่น</a></li>
+                    <li><a href="#">5.เปิด-ปิด หวย/อัตราจ่าย</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu3">รายการแพ้ชนะ
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="sub-menu3">
+                    <li><a href="#">1.แพ้-ชนะ สมาชิก/ประเภท</a></li>
+                    <li><a href="#">2.แพ้-ชนะ สุทธิ</a></li>
+                    <li><a href="#">3.รายการที่ถูกรางวัล</a></li>
+                    <li><a href="#">4.ผลการออกรางวัล</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu4">การเงิน
+                <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="sub-menu4">
+                    <li><a href="#">1.เติมเงิน</a></li>
+                    <li><a href="#">2.ประวัติการเติมเงิน</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu5">Admin
+                <span class="fas fa-caret-down"></span>
+                </a>
+                <ul class="sub-menu5">
+                    <li><a href="/admin_news">1.แก้ไขข่าวประกาศ</a></li>
+                    <li><a href="/admin_type">2.ตั้งค่าประเภทหวย</a></li>
+                    <li><a href="/admin_usertype">3.ตั้งค่าประเภทผู้ใช้งาน</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    $('.menu0').click(function(){
+        $('.sub-menu1').slideUp(200);
+        $('.sub-menu2').slideUp(200);
+        $('.sub-menu3').slideUp(200);
+        $('.sub-menu4').slideUp(200);
+        $('.sub-menu5').slideUp(200);
+    });
+    $('.menu1').click(function(){
+        $('.sub-menu1').slideToggle(200);
+        $('.sub-menu2').slideUp(200);
+        $('.sub-menu3').slideUp(200);
+        $('.sub-menu4').slideUp(200);
+        $('.sub-menu5').slideUp(200);
+    });    
+    $('.menu2').click(function(){
+        $('.sub-menu2').slideToggle(200);
+        $('.sub-menu1').slideUp(200);
+        $('.sub-menu3').slideUp(200);
+        $('.sub-menu4').slideUp(200);
+        $('.sub-menu5').slideUp(200);
+    });    
+    $('.menu3').click(function(){
+        $('.sub-menu3').slideToggle(200);
+        $('.sub-menu1').slideUp(200);
+        $('.sub-menu2').slideUp(200);
+        $('.sub-menu4').slideUp(200);
+        $('.sub-menu5').slideUp(200);
+    });    
+    $('.menu4').click(function(){
+        $('.sub-menu4').slideToggle(200);
+        $('.sub-menu1').slideUp(200);
+        $('.sub-menu3').slideUp(200);
+        $('.sub-menu2').slideUp(200);
+        $('.sub-menu5').slideUp(200);
+    });
+    $('.menu5').click(function(){
+        $('.sub-menu5').slideToggle(200);
+        $('.sub-menu1').slideUp(200);
+        $('.sub-menu3').slideUp(200);
+        $('.sub-menu2').slideUp(200);
+        $('.sub-menu4').slideUp(200);
+    });
+</script>

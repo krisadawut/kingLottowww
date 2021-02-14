@@ -1,0 +1,118 @@
+body::-webkit-scrollbar{
+  width: 1em;
+}
+body::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    
+}
+body::-webkit-scrollbar-thumb{
+  background-color: darkgray ;
+  outline: 1px solid slategray;   
+}
+/* ********** */
+/* .main *{
+   border: red solid 1px; 
+} */
+.main{
+  display: grid;
+  grid-template-columns: 190px auto;
+  grid-template-rows: 45px 40px auto 30px;
+  /* gap: 10px; */
+  grid-template-areas: 
+      'header header'
+      'aside article-nav'
+      'aside article-body'
+      'aside footer'
+  ;
+  height: 100vh;
+}
+
+header{
+  grid-area: header;
+}
+aside{
+  grid-area: aside;
+}
+/*start--//article-nav */
+#article-nav{
+  grid-area: article-nav;
+  display: flex;
+  background-color: rgb(52, 55, 64);
+  color: white;
+  border-bottom: 1px gray solid;
+}
+#article-nav ul{
+  list-style: none;
+  padding: 10px;
+}
+#article-nav ul li{
+  display: inline;
+  padding-right: 10px;
+}
+/*end--//article-nav */
+
+#article-body{
+  grid-area: article-body;
+  background-color: rgb(52, 55, 64);
+  position: relative;
+  padding: 20px;
+}
+#menu-title{
+  font-size: 25px;
+  border-bottom: 1px dotted white;
+  height: 40px;
+  
+}
+footer{
+  grid-area: footer;
+  background-color: rgb(52, 55, 64);
+  position: relative;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

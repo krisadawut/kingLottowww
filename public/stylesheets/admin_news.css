@@ -1,0 +1,22 @@
+#noti-welcome{
+    border: 1px solid #dd3c10;
+    padding: 15px;
+    background-color: darkred;
+    line-height: 25px;
+}
+#noti-head{
+    font-size: 20px;
+}
+#noti-detail{
+    font-size: 15px;
+}
+
+#news-head{
+    font-size: 20px;
+}
+#news-show {
+    border: white 1px solid;
+    min-height: 500px;
+    padding: 20px;
+}
+

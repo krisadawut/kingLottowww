@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/news.css' />
+    <title><%= title %></title>
+    
+  </head>
+  <body>
+    <div class="main">
+      <header><%- include template/header %></header>
+      <footer><%- include template/footer %></footer>
+      <aside><%- include template/aside %></aside>
+      <article id="article-nav">
+          <ul>
+              <li><i class="ace-icon fa fa-home home-icon"></i></li>
+              <li><i class="fas fa-angle-double-right" style="font-size: 10px;"></i></li>
+              <li><%= title %></li>
+          </ul>
+      </article>
+      <article id="article-body">
+          <div id="menu-title">
+              <%= text +' '+ Users[0].UserName  %>
+          </div>
+          <br>
+          <div id="noti-welcome">
+            <div id="noti-head">
+              <i class="fas fa-exclamation-triangle"></i> เรียนท่านที่ต้องการ หุ้น หรือ เก็บของ
+            </div>
+            <div id="noti-detail">
+              กรุณาตั้งจำนวนการรับของต่อตัวในหน้า ตั้งค่าการรับของ เพื่อกำหนดว่าท่านจะรับของสูงสุดต่อตัวตัวละเท่าไร หากไม่มีการตั้ง ระบบจะถือว่าท่านไม่ต้องการสู้</p>
+            </div>
+          </div>
+          <br>
+          <div id="news">
+            <div id="news-head">
+              <i class="fas fa-angle-double-right"></i> ข่าวประกาศ
+            </div>
+            <br>
+            <div id="news-show">
+              <table>
+                <tr><th id="th-id">ID</th><th>News</th></tr>
+                <% News.forEach(function(i) { %>
+                  <tr><td id="td-id">
+                    <!-- <a href="/delnews?nid=<%= i.NewsID %>">(ลบ)</a> -->
+                    <%= i.NewsID %>
+                  </td><td><%- i.News_Detail %></td></tr>
+                <% }); %>
+              </table>
+              
+            </div>
+          </div>
+      </article>
+      
+    </div>
+  </body>
+</html>
